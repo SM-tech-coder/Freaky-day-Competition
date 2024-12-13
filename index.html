@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        h1 {
+            font-size: 3rem;
+            text-shadow: 0 0 10px #fff, 0 0 20px cyan, 0 0 30px cyan;
+            animation: glow 1.5s infinite;
+        }
+        p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 20px 0;
+            text-align: center;
+            line-height: 1.6;
+        }
+        a {
+            text-decoration: none;
+            color: #fff;
+            background: linear-gradient(45deg, #ff0099, #493240);
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            box-shadow: 0 0 15px rgba(255, 0, 153, 0.5);
+            transition: 0.3s ease-in-out;
+        }
+        a:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 30px rgba(255, 0, 153, 0.8);
+        }
+        @keyframes glow {
+            0%, 100% {
+                text-shadow: 0 0 10px #fff, 0 0 20px cyan, 0 0 30px cyan;
+            }
+            50% {
+                text-shadow: 0 0 20px #fff, 0 0 30px cyan, 0 0 50px cyan;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome, Ms. Saajida and Ms. Wurudh!</h1>
+    <p>
+        Prepare yourselves for a competition like no other! This event promises to be a thrilling showcase of talent, creativity, and excitement. 
+        It’s not just a competition; it’s an experience that will leave you amazed and inspired. Let the countdown begin!
+    </p>
+    <a href="form.html">Proceed to the Next Page</a>
+</body>
+</html>
