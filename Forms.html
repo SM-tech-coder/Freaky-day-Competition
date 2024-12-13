@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fill Your Details</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #232526, #414345);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        h2 {
+            font-size: 2.5rem;
+            text-shadow: 0 0 15px #f9f9f9, 0 0 30px #00ffff, 0 0 45px #00ffff;
+        }
+        form {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input {
+            width: 300px;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+        input:focus {
+            outline: none;
+            box-shadow: 0 0 10px cyan;
+        }
+        a {
+            text-decoration: none;
+            color: #fff;
+            background: linear-gradient(45deg, #ff5f6d, #ffc371);
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            box-shadow: 0 0 15px rgba(255, 95, 109, 0.5);
+            transition: 0.3s ease-in-out;
+            display: block;
+            text-align: center;
+        }
+        a:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 30px rgba(255, 95, 109, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <h2>Please Fill Your Details</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        
+        <label for="work">Place of Work:</label>
+        <input type="text" id="work" name="work" placeholder="Enter your place of work" required>
+        
+        <label for="hobby">Hobby:</label>
+        <input type="text" id="hobby" name="hobby" placeholder="Enter your hobby" required>
+    </form>
+    <a href="rest.html">Submit and Proceed</a>
+</body>
+</html>
